@@ -23,17 +23,25 @@ Document at least 3 bugs you found. Add rows as needed.
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
-- Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
-- Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+Claude Code was the only AI used
 
+- Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+A suggestion that the AI gave which was correct, was swapping the logic behind check_guess and ensuring the correct output was given to the user based on their guess.
+- Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+Originally, the AI suggested merely swapping the two outputs with each other. However, this still resulted in a misleading output for the user so I had to tell the Ai to rewrite the tex contained within the string. The result was verified within running the program on localhost.
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
-- Describe at least one test you ran (manual or using pytest)  
-  and what it showed you about your code.
+
+I ran pytest alongside running the program from streamlit, to make sure the user was getting the correct output.
+- Describe at least one test you ran (manual or using pytest) and what it showed you about your code.
+  I ran pytest and did it manually within streamlit. It helped me to identify where certain functions were located within my code, and how they interacted with each other.
+
 - Did AI help you design or understand any tests? How?
+
+Yes, Ai helped me design my test. I gave it a list of requirements, and the AI was fed this list to create tests.
 
 ---
 

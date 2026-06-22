@@ -37,6 +37,7 @@ def check_guess(guess, secret):
     guess = int(guess)
     secret = int(secret)
 
+    #FIX: Refactored logic into logic_utils.py using agent mode
     if guess == secret:
         return "Win", "🎉 Correct!"
     if guess > secret:
