@@ -14,3 +14,16 @@ def test_guess_too_low():
     # If secret is 50 and guess is 40, hint should be "Too Low"
     result = check_guess(40, 50)
     assert result == "Too Low"
+
+
+def test_string_secret_compared_numerically():
+    # Regression test for the high/low glitch: when the secret arrives as a
+    # string (as app.py passes it on even attempts), the comparison must still
+    # be numeric. As strings, "9" > "10" is True, which used to flip the hint.
+    # guess 9 vs secret "10" must report "Too Low", not "Too High".
+    outcome, _message = check_guess(9, "10")
+    assert outcome == "Too Low"
+
+    # And the reverse: guess 10 vs secret "9" must report "Too High".
+    outcome, _message = check_guess(10, "9")
+    assert outcome == "Too High"

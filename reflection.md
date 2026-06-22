@@ -14,9 +14,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+|Guess of 50 |"Too Low" |"Too High" |"none" | 
+|Guess of 75 |"Too High |"Too Low" |"none"  |
+|New Game Clicked, after winning|A new game begins |A new game does not begin |"You already won. Start a new game to play again." |
 
 ---
 
