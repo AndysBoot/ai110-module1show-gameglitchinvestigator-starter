@@ -25,21 +25,21 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [The purpose of the game is to challenge the user and have them attempt to guess the secret number.]
+- [Two bugs that I found was a higher and lower bug in which the wrong output was given to the user based on their guess, and another bug in which the game wasn't properly restarting after a new game was started.]
+- [I fixed the hgiher and lower bug, and I also fixed it to where the user can now start a new game.]
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess
+2. program returns whether guess is lower or higher then secret number
+3. Score updates after each guess
+4. Number of attempts updates after each game.
+5. User wins the game if their guess is the secret number
+6. If user runs out of attempts, they lose the game.
 
-**Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
 ## 🧪 Test Results
 
